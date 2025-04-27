@@ -114,21 +114,16 @@
           <p class="lead">Para agregar esto <span class="font-italic">Sistema Cero Flacidez</span> a su pedido hoy, simplemente haga clic en el botón verde que dice: "¡Sí, acepto esta oferta especial única!" ahora mismo...</p>
           <div id="cta">
 
-          <!-- HOTMART - Upsell Widget -->
-          <div id="box_hotmart"></div>
-            <script src="https://pay.hotmart.com/assets/js/hotmart.upsell_checkout.js"></script>
+<!-- HOTMART - Sales Funnel Widget -->
+<!--- sales funnel container --->
+<div id="hotmart-sales-funnel"></div>
 
-            <script>
-            opts = {
-            key: 'USL-102058-306939-5d9d72f51c68f264f787fe33b5c38e66',
-            width: '650' ,
-            height: '420'
-            };
-            Upsell.Widget.show(opts);
-            </script>
-          <!-- HOTMART - Upsell Widget [end] -->
-
-
+<!--- script load and setup --->
+<script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+<script>
+checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
+</script>
+<!-- HOTMART - Sales Funnel Widget -->
 
           </div>
           <p class="lead">Este sistema ha ayudado a mujeres como Ana...</p>

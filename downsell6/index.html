@@ -68,19 +68,16 @@
           <p class="lead">Haz clic en el botón verde que dice: <span class="font-italic">"¡Sí, acepto esta oferta especial única!"</span>...</p>
           <div id="cta">
 
-          <!-- HOTMART - Upsell Widget -->
-          <div id="box_hotmart"></div>
-            <script src="https://pay.hotmart.com/assets/js/hotmart.upsell_checkout.js"></script>
+<!-- HOTMART - Sales Funnel Widget -->
+<!--- sales funnel container --->
+<div id="hotmart-sales-funnel"></div>
 
-            <script>
-            opts = {
-            key: 'USL-102058-306940-fcdba31fc43fd074df3498e0e9e1eb1a',
-            width: '650' ,
-            height: '420'
-            };
-            Upsell.Widget.show(opts);
-            </script>
-          <!-- HOTMART - Upsell Widget [end] -->
+<!--- script load and setup --->
+<script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+<script>
+checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
+</script>
+<!-- HOTMART - Sales Funnel Widget -->
 
           </div>
           <p class="lead">Y empieza ya a acabar con la piel flácida y caída.</p>
